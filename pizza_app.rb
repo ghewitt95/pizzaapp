@@ -32,7 +32,8 @@ def run_cli
 
     input = gets.chomp
 
-    break if input.downcase == "no"
+    break if input.downcase == "exit" || input == "no"
+
 
     pizza.add_topping(input)
     pp "Current toppings: #{pizza.toppings.join(', ')}"
