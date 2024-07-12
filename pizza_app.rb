@@ -22,10 +22,16 @@ def run_cli
   pizza = Pizza.new
 
   loop do
+    if first_input
     pp "What topping would you like on your pizza?"
+    first_input = false
+    else
+      pp "Anything else?"
+    end
+
     input = gets.chomp
 
-    break if input.downcase == "exit"
+    break if input.downcase == "no"
 
     pizza.add_topping(input)
     pp "Current toppings: #{pizza.toppings.join(', ')}"
@@ -33,3 +39,5 @@ def run_cli
 
   pp "Final Order!: #{pizza.toppings.join(', ')}"
 end
+
+run_cli if __FILE__ ==$0
