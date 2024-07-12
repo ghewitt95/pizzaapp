@@ -20,9 +20,10 @@ end
 
 def run_cli
   pizza = Pizza.new
+  first_input = true
 
   loop do
-    if first_input
+  if first_input
     pp "What topping would you like on your pizza?"
     first_input = false
     else
