@@ -1,5 +1,5 @@
-# ruby-cli-template
+# Pizzaapp CLI
 
-Use this repository as a template for your Ruby CLI (command line interface) project.
+Ruby CLI app simulating you putting your favorite toppings on a pizza but PLEASE don't add pineapple
 
 - Ruby version: `3.2.1`
